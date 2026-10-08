@@ -1,0 +1,216 @@
+_dataset:
+  class: Wang2026
+  code: Wang2026
+  doi: 10.1184/R1/32293995.v1
+  interval:
+  - 0.0
+  - 4.999
+  n_subjects: 39
+  paradigm: imagery
+acquisition:
+  cap_manufacturer: Compumedics Neuroscan
+  cap_model: Quik-Cap
+  channel_types:
+    eeg: 62
+  filters:
+    notch: 60.0
+  hardware: Compumedics Neuroscan SynAmps 2/RT
+  impedance_threshold_kohm: 5.0
+  line_freq: 60.0
+  montage: standard_1005
+  reference: midway between Cz and CPz
+  sampling_rate: 1000.0
+  sensors:
+  - Fp1
+  - Fpz
+  - Fp2
+  - AF3
+  - AF4
+  - F7
+  - F5
+  - F3
+  - F1
+  - Fz
+  - F2
+  - F4
+  - F6
+  - F8
+  - FT7
+  - FC5
+  - FC3
+  - FC1
+  - FCz
+  - FC2
+  - FC4
+  - FC6
+  - FT8
+  - T7
+  - C5
+  - C3
+  - C1
+  - Cz
+  - C2
+  - C4
+  - C6
+  - T8
+  - TP7
+  - CP5
+  - CP3
+  - CP1
+  - CPz
+  - CP2
+  - CP4
+  - CP6
+  - TP8
+  - P7
+  - P5
+  - P3
+  - P1
+  - Pz
+  - P2
+  - P4
+  - P6
+  - P8
+  - PO7
+  - PO5
+  - PO3
+  - POz
+  - PO4
+  - PO6
+  - PO8
+  - CB1
+  - O1
+  - Oz
+  - O2
+  - CB2
+  software: BCI2000
+bci_application:
+  applications:
+  - cursor control
+  environment: laboratory
+  online_feedback: true
+contributing_labs:
+- Carnegie Mellon University Biomedical Functional Imaging and Neuroengineering Lab
+data_processed: true
+data_structure:
+  n_blocks: 6
+  n_trials: varies by run and subject
+  trials_context: Each regular session contains six runs; run0 is a separate initial BCI2000 baseline. Subjects completed
+    4, 6, or 8 regular sessions.
+documentation:
+  associated_paper_doi: 10.1038/s41467-026-75435-5
+  contact_info:
+  - bhe1@andrew.cmu.edu
+  country: US
+  data_url: https://kilthub.cmu.edu/articles/dataset/EEG_Datasets_for_Sensory-Guided_Joint_Learning_in_Motor_Imagery_Brain-Computer_Interfaces/32293995
+  doi: 10.1184/R1/32293995.v1
+  funding:
+  - NS124564
+  - NS131069
+  - NS127849
+  - NS096761
+  institution: Carnegie Mellon University
+  institution_department: Department of Biomedical Engineering
+  investigators:
+  - Hanwen Wang
+  - Yisha Zhang
+  - Maxim Karrenbach
+  - Yidan Ding
+  - Bin He
+  keywords:
+  - motor imagery
+  - BCI
+  - joint learning
+  - tactile stimulation
+  - EEGNet
+  license: CC-BY-NC-4.0
+  publication_year: 2026
+  repository: KiltHub (Figshare)
+  senior_author: Bin He
+experiment:
+  class_labels:
+  - left_hand
+  - right_hand
+  - hands
+  - rest
+  events:
+    hands: 3
+    left_hand: 1
+    rest: 4
+    right_hand: 2
+  feedback_type: visual cursor feedback, with cohort-specific tactile guidance, EEGNet adaptation, or fixed BCI2000 decoding
+  has_training_test_split: true
+  mode: online
+  n_classes: 4
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  - tactile
+  stimulus_presentation:
+    SoftwareName: BCI2000
+  stimulus_type: visual cursor and directional cue
+  study_design: 'One longitudinal MI-BCI study release with 39 unique participants. The primary randomized experiment included
+    31 participants: joint learning (n=15), BCI2000 control (n=8), and tactile control (n=8). A separately recruited EEGNet-control
+    cohort added 8 participants.'
+  synchronicity: synchronous
+  task_type: online 1D and 2D cursor control
+  tasks:
+  - left hand imagery
+  - right hand imagery
+  - bilateral hand imagery
+  - rest
+  trial_duration: 5.0
+external_links:
+  code: https://github.com/bfinl/SensoryGuidedJointLearning
+  paper: https://doi.org/10.1038/s41467-026-75435-5
+  source: https://kilthub.cmu.edu/articles/dataset/EEG_Datasets_for_Sensory-Guided_Joint_Learning_in_Motor_Imagery_Brain-Computer_Interfaces/32293995
+file_format: MATLAB v7.3
+n_contributing_labs: 1
+paradigm_specific:
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 5.0
+  imagery_tasks:
+  - left_hand
+  - right_hand
+  - hands
+  - rest
+participants:
+  bci_experience: naive
+  health_status: healthy
+  n_subjects: 39
+  species: homo sapiens
+preprocessing:
+  data_state: trial-segmented
+  notch_hz: 60.0
+  notes: The release contains 62 selected EEG channels and states that no additional filtering or downsampling was applied.
+    Runs use either fixed-length EEGNet trials or variable-length BCI2000 trials.
+  preprocessing_applied: true
+  preprocessing_steps:
+  - trial segmentation
+  - auxiliary-channel exclusion
+  - per-trial temporal centering in the MOABB reconstruction
+runs_per_session: 1
+sessions_per_subject: 5
+signal_processing:
+  classifiers:
+  - weighted EEGNet
+  - EEGNet
+  - BCI2000 linear classifier
+  feature_extraction:
+  - EEGNet
+  - autoregressive spectral features
+  frequency_bands:
+    online_EEGNet:
+    - 4.0
+    - 40.0
+  spatial_filters:
+  - CSP-based initial sample weighting
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Motor Imagery
+  - Online BCI

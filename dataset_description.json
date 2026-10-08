@@ -1,0 +1,50 @@
+{
+    "Name": "Wang2026: Sensory-guided joint-learning MI-BCI study from Wang et al. (2026)",
+    "BIDSVersion": "1.9.0",
+    "HEDVersion": "8.4.0",
+    "DatasetType": "derivative",
+    "License": "CC-BY-NC-4.0",
+    "Authors": [
+        "Hanwen Wang",
+        "Yisha Zhang",
+        "Maxim Karrenbach",
+        "Yidan Ding",
+        "Bin He"
+    ],
+    "Funding": [
+        "NS124564",
+        "NS131069",
+        "NS127849",
+        "NS096761"
+    ],
+    "ReferencesAndLinks": [
+        "https://kilthub.cmu.edu/articles/dataset/EEG_Datasets_for_Sensory-Guided_Joint_Learning_in_Motor_Imagery_Brain-Computer_Interfaces/32293995",
+        "10.1038/s41467-026-75435-5"
+    ],
+    "Keywords": [
+        "motor imagery",
+        "BCI",
+        "joint learning",
+        "tactile stimulation",
+        "EEGNet"
+    ],
+    "DatasetDOI": "doi:10.1184/R1/32293995.v1",
+    "GeneratedBy": [
+        {
+            "CodeURL": "https://github.com/NeuroTechX/moabb",
+            "Name": "moabb",
+            "Description": "Mother of All BCI Benchmarks",
+            "Version": "1.8.0dev0"
+        }
+    ],
+    "SourceDatasets": [
+        {
+            "DOI": "10.1184/R1/32293995.v1",
+            "URL": "https://kilthub.cmu.edu/articles/dataset/EEG_Datasets_for_Sensory-Guided_Joint_Learning_in_Motor_Imagery_Brain-Computer_Interfaces/32293995"
+        }
+    ],
+    "PublicationYear": 2026,
+    "EthicsApprovals": [
+        "Every experiment involving human participants has been carried out following a protocol approved by the Institutional Review Board of Carnegie Mellon University. Each participant gave informed written consent. (Quoted verbatim from the primary publication's Ethics statement, Wang et al. 2026, Nature Communications 17:6177, DOI 10.1038/s41467-026-75435-5.)"
+    ]
+}

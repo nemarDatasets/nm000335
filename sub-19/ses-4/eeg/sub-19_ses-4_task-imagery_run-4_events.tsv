@@ -1,0 +1,10 @@
+onset	duration	trial_type	value	sample
+0.05	4.999	left_hand	2	50
+5.15	4.999	hands	1	5150
+10.25	4.999	right_hand	4	10250
+15.35	4.999	rest	3	15350
+20.45	4.999	left_hand	2	20450
+25.55	4.999	rest	3	25550
+30.65	4.999	left_hand	2	30650
+35.75	4.999	right_hand	4	35750
+40.85	4.15	hands	1	40850

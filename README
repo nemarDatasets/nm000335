@@ -1,0 +1,165 @@
+Wang2026
+========
+
+Sensory-guided joint-learning MI-BCI study from Wang et al. (2026).
+
+Dataset Overview
+----------------
+  Code: Wang2026
+  Paradigm: imagery
+  DOI: 10.1184/R1/32293995.v1
+  Subjects: 39
+  Sessions per subject: 5
+  Events: left_hand=1, right_hand=2, hands=3, rest=4
+  Trial interval: [0.0, 4.999] s
+  File format: MATLAB v7.3
+  Data preprocessed: True
+  Contributing labs: Carnegie Mellon University Biomedical Functional Imaging and Neuroengineering Lab
+
+Acquisition
+-----------
+  Sampling rate: 1000.0 Hz
+  Number of channels: 62
+  Channel types: eeg=62
+  Channel names: Fp1, Fpz, Fp2, AF3, AF4, F7, F5, F3, F1, Fz, F2, F4, F6, F8, FT7, FC5, FC3, FC1, FCz, FC2, FC4, FC6, FT8, T7, C5, C3, C1, Cz, C2, C4, C6, T8, TP7, CP5, CP3, CP1, CPz, CP2, CP4, CP6, TP8, P7, P5, P3, P1, Pz, P2, P4, P6, P8, PO7, PO5, PO3, POz, PO4, PO6, PO8, CB1, O1, Oz, O2, CB2
+  Montage: standard_1005
+  Hardware: Compumedics Neuroscan SynAmps 2/RT
+  Software: BCI2000
+  Reference: midway between Cz and CPz
+  Line frequency: 60.0 Hz
+  Online filters: {'notch': 60.0}
+  Impedance threshold: 5.0 kOhm
+  Cap manufacturer: Compumedics Neuroscan
+  Cap model: Quik-Cap
+
+Ethics
+------
+  Every experiment involving human participants has been carried out following a protocol approved by the Institutional Review Board of Carnegie Mellon University. Each participant gave informed written consent. (Quoted verbatim from the primary publication's Ethics statement: Wang, H., Zhang, Y., Karrenbach, M., Ding, Y., & He, B. (2026). Sensory-guided human-machine joint learning accelerates the acquisition of motor imagery brain computer interface control. Nature Communications, 17, 6177. https://doi.org/10.1038/s41467-026-75435-5. Participants were recruited from the Pittsburgh area and compensated $15/hour; informed consent followed the World Medical Association's Declaration of Helsinki.)
+
+Participants
+------------
+  Number of subjects: 39
+  Health status: healthy
+  BCI experience: naive
+
+Experimental Protocol
+---------------------
+  Paradigm: imagery
+  Task type: online 1D and 2D cursor control
+  Number of classes: 4
+  Class labels: left_hand, right_hand, hands, rest
+  Trial duration: 5.0 s
+  Tasks: left hand imagery, right hand imagery, bilateral hand imagery, rest
+  Study design: One longitudinal MI-BCI study release with 39 unique participants. The primary randomized experiment included 31 participants: joint learning (n=15), BCI2000 control (n=8), and tactile control (n=8). A separately recruited EEGNet-control cohort added 8 participants.
+  Feedback type: visual cursor feedback, with cohort-specific tactile guidance, EEGNet adaptation, or fixed BCI2000 decoding
+  Stimulus type: visual cursor and directional cue
+  Stimulus modalities: visual, tactile
+  Primary modality: visual
+  Synchronicity: synchronous
+  Mode: online
+  Training/test split: True
+  Stimulus presentation: SoftwareName=BCI2000
+
+HED Event Annotations
+---------------------
+  Schema: HED 8.4.0 | Browse: https://www.hedtags.org/hed-schema-browser
+
+  left_hand
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Imagine
+          ├─ Move
+          └─ Left, Hand
+
+  right_hand
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Imagine
+          ├─ Move
+          └─ Right, Hand
+
+  hands
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Imagine, Move, Hand
+
+  rest
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Rest
+
+Paradigm-Specific Parameters
+----------------------------
+  Detected paradigm: motor_imagery
+  Imagery tasks: left_hand, right_hand, hands, rest
+  Imagery duration: 5.0 s
+
+Data Structure
+--------------
+  Trials: varies by run and subject
+  Blocks per session: 6
+  Trials context: Each regular session contains six runs; run0 is a separate initial BCI2000 baseline. Subjects completed 4, 6, or 8 regular sessions.
+
+Preprocessing
+-------------
+  Data state: trial-segmented
+  Preprocessing applied: True
+  Steps: trial segmentation, auxiliary-channel exclusion, per-trial temporal centering in the MOABB reconstruction
+  Notch filter: 60.0 Hz
+  Notes: The release contains 62 selected EEG channels and states that no additional filtering or downsampling was applied. Runs use either fixed-length EEGNet trials or variable-length BCI2000 trials.
+
+Signal Processing
+-----------------
+  Classifiers: weighted EEGNet, EEGNet, BCI2000 linear classifier
+  Feature extraction: EEGNet, autoregressive spectral features
+  Frequency bands: online_EEGNet=[4.0, 40.0] Hz
+  Spatial filters: CSP-based initial sample weighting
+
+BCI Application
+---------------
+  Applications: cursor control
+  Environment: laboratory
+  Online feedback: True
+
+Tags
+----
+  Pathology: Healthy
+  Modality: Motor
+  Type: Motor Imagery, Online BCI
+
+Documentation
+-------------
+  DOI: 10.1184/R1/32293995.v1
+  Associated paper DOI: 10.1038/s41467-026-75435-5
+  License: CC-BY-NC-4.0
+  Investigators: Hanwen Wang, Yisha Zhang, Maxim Karrenbach, Yidan Ding, Bin He
+  Senior author: Bin He
+  Contact: bhe1@andrew.cmu.edu
+  Institution: Carnegie Mellon University
+  Department: Department of Biomedical Engineering
+  Country: US
+  Repository: KiltHub (Figshare)
+  Data URL: https://kilthub.cmu.edu/articles/dataset/EEG_Datasets_for_Sensory-Guided_Joint_Learning_in_Motor_Imagery_Brain-Computer_Interfaces/32293995
+  Publication year: 2026
+  Funding: NS124564; NS131069; NS127849; NS096761
+  Keywords: motor imagery, BCI, joint learning, tactile stimulation, EEGNet
+
+External Links
+--------------
+  Source: https://kilthub.cmu.edu/articles/dataset/EEG_Datasets_for_Sensory-Guided_Joint_Learning_in_Motor_Imagery_Brain-Computer_Interfaces/32293995
+  Paper: https://doi.org/10.1038/s41467-026-75435-5
+  Code: https://github.com/bfinl/SensoryGuidedJointLearning
+
+References
+----------
+Wang, H., Zhang, Y., Karrenbach, M., Ding, Y., & He, B. (2026). Sensory-guided human-machine joint learning accelerates the acquisition of motor imagery brain computer interface control. Nature Communications, 17, 6177. https://doi.org/10.1038/s41467-026-75435-5
+
+Wang, H., Zhang, Y., Karrenbach, M., Ding, Y., & He, B. (2026). EEG Datasets for Sensory-Guided Joint Learning in Motor Imagery Brain-Computer Interfaces. Carnegie Mellon University. https://doi.org/10.1184/R1/32293995.v1
+Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Hochenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896). https://doi.org/10.21105/joss.01896
+
+Pernet, C. R., Appelhoff, S., Gorgolewski, K. J., Flandin, G., Phillips, C., Delorme, A., Oostenveld, R. (2019). EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Scientific Data, 6, 103. https://doi.org/10.1038/s41597-019-0104-8
+
+---
+Generated by MOABB 1.8.0dev0 (Mother of All BCI Benchmarks)
+https://github.com/NeuroTechX/moabb

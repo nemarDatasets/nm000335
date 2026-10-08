@@ -1,0 +1,4 @@
+onset	duration	trial_type	value	sample
+0.05	4.999	rest	2	50
+5.15	4.999	right_hand	3	5150
+10.25	4.75	left_hand	1	10250
