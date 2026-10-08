@@ -1,0 +1,120 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Hanwen Wang": {
+      "orcid": "0000-0001-5852-3275"
+    },
+    "Yisha Zhang": {},
+    "Maxim Karrenbach": {
+      "orcid": "0000-0003-1854-1879"
+    },
+    "Yidan Ding": {
+      "orcid": "0009-0003-9363-7755",
+      "affiliations": [
+        {
+          "name": "Carnegie Mellon University",
+          "identifier": "https://ror.org/05x2bcf33",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Bin He": {
+      "orcid": "0000-0003-2944-8602"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1184/R1/32293995.v1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1038/s41467-026-75435-5",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000335",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000335",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "NIH",
+      "award_number": "NS124564"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "NS131069"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "NS127849"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "NS096761"
+    }
+  ],
+  "title": "Wang2026: Sensory-guided joint-learning MI-BCI study from Wang et al. (2026)",
+  "license": "CC-BY-NC-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "134 GB (4522 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".mat",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "EEG recordings from 39 healthy, BCI-naive participants in a longitudinal motor imagery brain-computer interface study of sensory-guided human-machine joint learning. Participants performed online 1D and 2D cursor control using left-hand, right-hand, bilateral-hand and rest imagery across multiple sessions. Cohorts received joint learning with tactile guidance and EEGNet adaptation, fixed BCI2000 decoding, tactile-only control, or EEGNet-only control. Data comprise 62-channel EEG sampled at 1000 Hz.",
+  "methods_description": "62-channel EEG was recorded with a Compumedics Neuroscan SynAmps 2/RT amplifier and Quik-Cap at 1000 Hz, referenced midway between Cz and CPz, with a 60 Hz notch filter. Stimulus presentation and online control used BCI2000. Each regular session contained six runs, plus a separate initial BCI2000 baseline run. Subjects completed 4, 6, or 8 sessions with visual cursor feedback, tactile guidance, and EEGNet or BCI2000 decoding depending on cohort.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "joint learning"
+    },
+    {
+      "term": "tactile stimulation"
+    },
+    {
+      "term": "EEGNet"
+    }
+  ],
+  "source_hash": "5e0bf45badb9ec1a67e64912611d0fd3432f9aed8bffe2b0c3f71e6396f6d246"
+}
