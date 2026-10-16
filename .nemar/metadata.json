@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Wang2026: Sensory-guided joint-learning MI-BCI study from Wang et al. (2026)",
+  "description": "This dataset contains 62-channel EEG recordings from 39 healthy, BCI-naive participants performing a longitudinal online motor imagery brain-computer interface study with 1D and 2D cursor control. Participants imagined left-hand, right-hand, bilateral-hand movements or rest across multiple sessions. Cohorts differed in feedback: sensory-guided joint learning with tactile stimulation and EEGNet adaptation, BCI2000 control, tactile control, and EEGNet control. The data support research on how sensory guidance and co-adaptive decoding speed the acquisition of BCI control.",
+  "methods_description": "EEG was recorded at 1000 Hz from 62 channels with a Compumedics Neuroscan SynAmps 2/RT amplifier and Quik-Cap, using BCI2000 for stimulus presentation and online control. Each regular session had six runs, plus a separate initial BCI2000 baseline run. Participants completed 4, 6, or 8 sessions. Online decoding used a weighted EEGNet, EEGNet, or a fixed BCI2000 linear classifier depending on cohort. Data are trial-segmented with a 60 Hz notch filter.",
+  "license": "CC-BY-NC-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Hanwen Wang": {
       "orcid": "0000-0001-5852-3275"
@@ -23,6 +28,29 @@
       "orcid": "0000-0003-2944-8602"
     }
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "joint learning"
+    },
+    {
+      "term": "tactile stimulation"
+    },
+    {
+      "term": "EEGNet"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1184/R1/32293995.v1",
@@ -73,14 +101,11 @@
       "award_number": "NS096761"
     }
   ],
-  "title": "Wang2026: Sensory-guided joint-learning MI-BCI study from Wang et al. (2026)",
-  "license": "CC-BY-NC-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "134 GB (4522 files)"
   ],
@@ -88,33 +113,10 @@
     ".edf",
     ".json",
     ".mat",
+    ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "EEG recordings from 39 healthy, BCI-naive participants in a longitudinal motor imagery brain-computer interface study of sensory-guided human-machine joint learning. Participants performed online 1D and 2D cursor control using left-hand, right-hand, bilateral-hand and rest imagery across multiple sessions. Cohorts received joint learning with tactile guidance and EEGNet adaptation, fixed BCI2000 decoding, tactile-only control, or EEGNet-only control. Data comprise 62-channel EEG sampled at 1000 Hz.",
-  "methods_description": "62-channel EEG was recorded with a Compumedics Neuroscan SynAmps 2/RT amplifier and Quik-Cap at 1000 Hz, referenced midway between Cz and CPz, with a 60 Hz notch filter. Stimulus presentation and online control used BCI2000. Each regular session contained six runs, plus a separate initial BCI2000 baseline run. Subjects completed 4, 6, or 8 sessions with visual cursor feedback, tactile guidance, and EEGNet or BCI2000 decoding depending on cohort.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "joint learning"
-    },
-    {
-      "term": "tactile stimulation"
-    },
-    {
-      "term": "EEGNet"
-    }
-  ],
-  "source_hash": "5e0bf45badb9ec1a67e64912611d0fd3432f9aed8bffe2b0c3f71e6396f6d246"
+  "source_hash": "2efaf95b3edb82a1a5ef1abb97a466bdd2b0e3d5de58a2099ec9f249c487fc93"
 }
