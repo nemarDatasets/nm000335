@@ -1,5 +1,5 @@
 {
-  "Name": "Wang2026: Sensory-guided joint-learning MI-BCI study from Wang et al. (2026)",
+  "Name": "Sensory-guided human-machine joint learning for motor imagery BCI: longitudinal online cursor-control EEG, 39 BCI-naive adults (Wang et al. 2026; KiltHub 32293995)",
   "BIDSVersion": "1.9.0",
   "HEDVersion": "8.4.0",
   "DatasetType": "derivative",
