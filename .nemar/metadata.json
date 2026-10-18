@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Wang2026: Sensory-guided joint-learning MI-BCI study from Wang et al. (2026)",
+  "title": "Sensory-guided joint-learning MI-BCI study",
   "description": "This dataset contains 62-channel EEG recordings from 39 healthy, BCI-naive participants performing a longitudinal online motor imagery brain-computer interface study with 1D and 2D cursor control. Participants imagined left-hand, right-hand, bilateral-hand movements or rest across multiple sessions. Cohorts differed in feedback: sensory-guided joint learning with tactile stimulation and EEGNet adaptation, BCI2000 control, tactile control, and EEGNet control. The data support research on how sensory guidance and co-adaptive decoding speed the acquisition of BCI control.",
   "methods_description": "EEG was recorded at 1000 Hz from 62 channels with a Compumedics Neuroscan SynAmps 2/RT amplifier and Quik-Cap, using BCI2000 for stimulus presentation and online control. Each regular session had six runs, plus a separate initial BCI2000 baseline run. Participants completed 4, 6, or 8 sessions. Online decoding used a weighted EEGNet, EEGNet, or a fixed BCI2000 linear classifier depending on cohort. Data are trial-segmented with a 60 Hz notch filter.",
   "license": "CC-BY-NC-4.0",
@@ -118,5 +118,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "2efaf95b3edb82a1a5ef1abb97a466bdd2b0e3d5de58a2099ec9f249c487fc93"
+  "source_hash": "918981c4ab663c2e65539e31178aa4df129aed4759a8c56bc684462d6322f8af"
 }
