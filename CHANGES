@@ -1,0 +1,2 @@
+1.0.1 2026-10-18
+  - Replaced the author/year citation wrapper in dataset_description.json Name with the existing descriptive study name.

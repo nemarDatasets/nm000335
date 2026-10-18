@@ -1,5 +1,5 @@
 {
-  "Name": "Wang2026: Sensory-guided joint-learning MI-BCI study from Wang et al. (2026)",
+  "Name": "Sensory-guided joint-learning MI-BCI study",
   "BIDSVersion": "1.9.0",
   "HEDVersion": "8.4.0",
   "DatasetType": "derivative",
@@ -50,5 +50,5 @@
   "EthicsApprovals": [
     "Every experiment involving human participants has been carried out following a protocol approved by the Institutional Review Board of Carnegie Mellon University. Each participant gave informed written consent. (Quoted verbatim from the primary publication's Ethics statement, Wang et al. 2026, Nature Communications 17:6177, DOI 10.1038/s41467-026-75435-5.)"
   ],
-  "Version": "1.0.0"
+  "Version": "1.0.1"
 }
